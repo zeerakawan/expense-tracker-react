@@ -1,4 +1,7 @@
 import Card from "./Components/Card";
+import React from "react";
+
+import NewExpense from "./Components/NewExpense/NewExpense";
 import Expenses from "./Components/Expenses";
 
 function App() {
@@ -31,6 +34,7 @@ function App() {
 
   return (
     <Card>
+      <NewExpense />
       <Expenses items={expenses} />
     </Card>
   );
